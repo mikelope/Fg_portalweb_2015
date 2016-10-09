@@ -1,0 +1,12 @@
+# robots.txt generated at http://www.mcanerin.com
+User-agent: *
+Disallow: /Login.aspx
+Disallow: /servicios.aspx
+Disallow: /galeria.aspx
+Disallow: /galeria2.aspx
+Disallow: /index.aspx
+Disallow: /contacto.aspx
+Disallow: /Options.aspx
+Disallow: /forms.aspx
+Disallow: /test/
+Sitemap: http://friocargo.pe/sitemap.xml

@@ -1,0 +1,129 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="fgMaster.master.cs" Inherits="FrioCArgo_v2.fgMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Frio Cargo SAC -Empresa de Transporte Refrigerado</title>
+     
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Empresa de Transporte de Carga Refrigerada a Nivel Nacional">
+    <meta name="author" content="">
+
+     <link rel="shortcut icon" href="~/img/friocargoico.ico" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/carousel.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+     <link href="css/album.css" rel="stylesheet" />
+    <link href="css/thumbnail-gallery.css" rel="stylesheet" />
+    <!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/carousel.js"></script>
+      <script src="js/jsocial-cargo.js">
+</script>
+    <!-- GOOGLE +1 BUTTON -->
+    <script src="https://apis.google.com/js/platform.js" async defer>
+      {lang: 'es'}
+    </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73562071-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body> 
+    <div id="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="img-responsive" src="/img/FRIO_CARGO.jpg" style="height: 128px; width: 247px" />
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4"></div>
+
+                <div class="col-lg-4">
+                    <p class="lead">Llámanos: <strong>(511) 622-3908</strong> </p>
+                    <p class="lead"><strong>contacto@friocargo.pe</strong></p>
+                    <p class="lead"><strong>ventas@friocargo.pe</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--NAV BAR -->
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <ul class="nav nav-pills pull-right " >
+                <li role="presentation" class="active"><a href="/Default.aspx">Home</a></li>
+                <li role="presentation"><a style="text-size-adjust: auto" href="/nosotros.aspx">Nosotros</a></li>
+                <li class="dropdown">
+                    <a href="/servicios/servicios.aspx" class="dropdown-toggle" data-toggle="dropdown">Servicios <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/servicios/servicios.aspx">Nuestros Servicios</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/servicios/cotizacion.aspx">Realizar una cotización</a></li>
+                    </ul>
+                </li>
+                <li role="presentation"><a href="/clientes.aspx">Clientes</a></li>
+                <li role="presentation"><a href="/gallery.aspx">Galeria</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceBody" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="footer">
+        <div class="container footer">
+            <!--columns-->
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3>Links Relacionados</h3>
+                    <p><a href="http://portal.osce.gob.pe/osce/">O. S. C. E.</a></p>
+                    <p><a href="http://portal.osce.gob.pe/rnp/">Registro Nacional de Proveedores</a></p>
+                    <p><a href="http://www.camaralima.org.pe/principal">Camara de Comercio de Lima</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <h3>Mapa del sitio</h3>
+                    <p><a href="/Default.aspx">Home</a></p>
+                    <p><a href="/nosotros.aspx">Nosotros</a></p>
+                    <p><a href="/servicios/servicios.aspx">Servicios</a></p>
+                    <p><a href="/servicios/cotizacion.aspx">-Cotización</a></p>
+                    <p><a href="/gallery.aspx">Galeria</a></p>
+                    <p><a href="http://webmail.friocargo.pe" target="_blank">Correo</a></p>
+                    <p><a href="http://intranet.friocargo.pe" target="_blank">Intranet Frio Cargo</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <h3>Links de interes</h3>
+                    <p>
+                        <asp:HyperLink ID="HyperLink2" NavigateUrl="http://slcp.mtc.gob.pe/" runat="server">Consulta de puntos - MTC</asp:HyperLink></p>
+                    <p>
+                        <asp:HyperLink ID="HyperLink3" NavigateUrl="http://www.municallao.gob.pe/tramites/papeletas/buscarpapeletas.php" runat="server">Consulta Papeletas - CALLAO</asp:HyperLink></p>
+                    <p>
+                        <asp:HyperLink ID="HyperLink4" NavigateUrl="https://www.sat.gob.pe/homesite2007/principal.aspx?mysession=gE4247vAvVK4nlypgTgxYXJydjvnMyPqr%2fi2LL6I4RE%3d" runat="server">Consulta Papeletas - SAT</asp:HyperLink></p>
+                    <p>
+                        <asp:HyperLink ID="HyperLink5" NavigateUrl="http://www.pit.gob.pe/pit2007/consultas.aspx" runat="server">Consulta papeletas - PNP</asp:HyperLink></p>
+                    <p>
+                        <asp:HyperLink ID="HyperLink6" NavigateUrl="http://www2.sutran.gob.pe/portal/index.php/consultas-en-linea" runat="server">Consulta papeletas - SUTRAN</asp:HyperLink></p>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>Calle.6 Mz.G Lt.21  Urb.Villaflores. Villa el Salvador - Lima</p>
+            <p class="text-left">&copy; FRIO CARGO S.A.C 2016. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a><a href="#"> | Design by</a> &middot; <a href="#">Miketop</a></p> 
+        </div>
+    </div>
+</body>
+</html>
